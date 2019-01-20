@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\alarm.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\drawable-xxhdpi\\alarm.png"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_name.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\home2.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\drawable-xxhdpi\\home2.png"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\home.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\drawable-xxhdpi\\home.png"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\calendar.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\drawable-xxhdpi\\calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\info.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\drawable-xxhdpi\\info.png"
+    }
+]

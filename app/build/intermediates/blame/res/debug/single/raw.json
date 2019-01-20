@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\raw\\alarm1.mp3",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\raw\\alarm1.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\raw\\alarmshort.mp3",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\raw\\alarmshort.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\raw\\alarmlong.wav",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\raw\\alarmlong.wav"
+    }
+]

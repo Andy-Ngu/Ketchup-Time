@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\pc_tomato.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\mipmap-xhdpi\\pc_tomato.png"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\scale.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\mipmap-xhdpi\\scale.png"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\no_flame.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\mipmap-xhdpi\\no_flame.png"
+    },
+    {
+        "merged": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\heart_time.png",
+        "source": "C:\\Users\\Andy\\AndroidStudioProjects\\Ketchup Time\\app\\src\\main\\res\\mipmap-xhdpi\\heart_time.png"
+    }
+]

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chase.ketchuptime.com.ketchuptime.MainActivity">
+
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tab_color" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabCal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/body_color"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/body_color">
+
+                        <TextView
+                            android:text="January 2016"
+                            android:layout_width="match_parent"
+                            android:id="@+id/tv_calmonth"
+                            android:gravity="center"
+                            android:background="@color/body_color"
+                            android:textSize="30sp"
+                            android:textColor="#FFF"
+                            android:layout_height="50dp" />
+
+                        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                            android:id="@+id/compactcalendar_view"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            app:compactCalendarBackgroundColor="@color/body_color"
+                            app:compactCalendarCurrentDayBackgroundColor="@color/text_color"
+                            app:compactCalendarCurrentSelectedDayBackgroundColor="@color/button_color"
+                            app:compactCalendarTextColor="#FFF"
+                            app:compactCalendarTextSize="12sp"
+                            android:layout_height="300dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@color/body_color"
+                            android:id="@+id/tv_caldate"
+                            android:textColor="#FFF"
+                            android:textSize="22sp" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:background="@color/body_color"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_caldisp"
+                                android:background="@color/body_color"
+                                android:textColor="#FFF"
+                                android:textSize="18sp" />
+                        </ScrollView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabTimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/body_color"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="232dp"
+                        android:background="@color/body_color"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="132dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/body_color"
+                            android:weightSum="1"
+                            android:gravity="center">
+
+
+                            <TextView
+                                android:text="Session Length\n00:00:00"
+                                android:layout_height="50dp"
+                                android:id="@+id/tv_totst"
+                                android:textColor="@color/text_color"
+                                android:background="@drawable/my_border"
+                                android:layout_width="105dp"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:text="Studied\n0 / 5"
+                                android:layout_height="50dp"
+                                android:id="@+id/tv_Compval"
+                                android:textColor="@color/text_color"
+                                android:background="@drawable/my_border"
+                                android:gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:layout_width="105dp" />
+
+                            <TextView
+                                android:text="Breaks\n0 / 4"
+                                android:layout_height="50dp"
+                                android:id="@+id/tv_breakval"
+                                android:textColor="@color/text_color"
+                                android:background="@drawable/my_border"
+                                android:gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:layout_width="105dp" />
+
+                            <TextView
+                                android:text="Pauses\n0"
+                                android:layout_height="50dp"
+                                android:id="@+id/tv_pausecount"
+                                android:textColor="@color/text_color"
+                                android:background="@drawable/my_border"
+                                android:gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:layout_width="105dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/body_color"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                        <TextView
+                            android:text="Study Period"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_period"
+                            android:textColor="@color/text_color"
+                            android:gravity="bottom|center_horizontal"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:text="00:00"
+                            android:layout_width="match_parent"
+                            android:layout_height="128dp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:id="@+id/tv_time"
+                            android:textColor="@color/text_color"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:fontFamily="sans-serif"
+                            android:background="@color/body_color"
+                            android:textSize="90sp" />
+
+                            </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/body_color"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:text="Slide the circle below to change study time between breaks"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/text_color_dark"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@color/body_color"
+                        android:orientation="horizontal"
+                        android:layout_height="50dp"
+                        android:layout_weight="0"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:weightSum="1">
+
+                        <SeekBar
+                            android:id="@+id/sb_val"
+                            android:background="@color/seek_color"
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0.99" />
+
+                        <TextView
+                            android:text="Timer\n05:00"
+                            android:id="@+id/tv_sbval"
+                            android:textColor="@color/text_color"
+                            android:background="@color/seek_color"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_width="50dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@color/body_color"
+                        android:orientation="horizontal"
+                        android:layout_height="100dp"
+                        android:layout_weight="0"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:gravity="center">
+
+                        <Button
+                            android:text="Start"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/btn_start"
+                            android:textSize="24sp"
+                            android:backgroundTint="@color/button_color"
+                            android:layout_height="100dp" />
+
+                        <Button
+                            android:text="PAUSE"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/btn_pause"
+                            android:textSize="24sp"
+                            android:backgroundTint="@color/button_color"
+                            android:layout_height="100dp" />
+
+                        <Button
+                            android:text="STOP"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/btn_stop"
+                            android:textSize="24sp"
+                            android:backgroundTint="@color/button_color"
+                            android:layout_height="100dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:background="@color/body_color">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/body_color">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1"
+                            android:background="@color/body_color"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <ImageView
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/pixeltomato"
+                                android:background="@color/body_color"
+                                android:id="@+id/img_tomato"
+                                android:layout_weight="0.23"
+                                android:layout_width="191dp" />
+
+                            <TextView
+                                android:text="Ketchup Time"
+                                android:layout_width="171dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/body_color"
+                                android:textSize="45sp"
+                                android:textColor="@color/text_color"
+                                android:id="@+id/tv_title"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/body_color">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@color/body_color">
+
+                            <TextView
+                                android:text="What is Ketchup Time?"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/body_color"
+                                android:textSize="30sp"
+                                android:textColor="@color/button_color"
+                                android:id="@+id/tv_whatis"
+                                android:gravity="center" />
+
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@color/body_color"
+                            android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@mipmap/heart_time"
+                                android:id="@+id/img_clock"
+                                android:layout_weight="1"
+                                android:background="@color/body_color" />
+                            <LinearLayout
+                                android:layout_width="253dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_descp1"
+                                android:scrollbars="vertical"
+                                android:layout_width="253dp"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/button_color"
+                                android:text="Work with Time, Not Against It"
+                                android:textSize="18sp"
+                                android:gravity="left"
+                                android:background="@color/body_color"
+                                android:layout_marginBottom="5dp" />
+                            <TextView
+                                android:id="@+id/tv_desc"
+                                android:scrollbars="vertical"
+                                android:layout_width="253dp"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/text_color"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:background="@color/body_color"
+                                android:gravity="left" />
+                                </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/body_color"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp">
+
+                            <LinearLayout
+                                android:layout_width="253dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/tv_descp2"
+                                    android:scrollbars="vertical"
+                                    android:layout_width="253dp"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/button_color"
+                                    android:text="Eliminate Burnout"
+                                    android:textSize="18sp"
+                                    android:gravity="right"
+                                    android:background="@color/body_color"
+                                    android:layout_marginBottom="5dp" />
+                                <TextView
+                                    android:id="@+id/tv_desc2"
+                                    android:scrollbars="vertical"
+                                    android:layout_width="253dp"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/text_color"
+                                    android:text=""
+                                    android:textSize="14sp"
+                                    android:background="@color/body_color"
+                                    android:gravity="right" />
+                                </LinearLayout>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@mipmap/no_flame"
+                                android:id="@+id/img_flame"
+                                android:layout_weight="1"
+                                android:background="@color/body_color" />
+                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@color/body_color"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@mipmap/pc_tomato"
+                                    android:id="@+id/img_pc"
+                                    android:layout_weight="1"
+                                    android:background="@color/body_color" />
+
+                                <LinearLayout
+                                    android:layout_width="253dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="left">
+                                    <TextView
+                                        android:id="@+id/tv_descp3"
+                                        android:scrollbars="vertical"
+                                        android:layout_width="253dp"
+                                        android:layout_height="match_parent"
+                                        android:textColor="@color/button_color"
+                                        android:text="Manage Distractions"
+                                        android:textSize="18sp"
+                                        android:gravity="left"
+                                        android:background="@color/body_color"
+                                        android:layout_marginBottom="5dp" />
+                                    <TextView
+                                        android:id="@+id/tv_desc3"
+                                        android:scrollbars="vertical"
+                                        android:layout_width="253dp"
+                                        android:layout_height="match_parent"
+                                        android:textColor="@color/text_color"
+                                        android:text=""
+                                        android:textSize="14sp"
+                                        android:background="@color/body_color" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/body_color"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="253dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/tv_descp4"
+                                        android:scrollbars="vertical"
+                                        android:layout_width="253dp"
+                                        android:layout_height="match_parent"
+                                        android:textColor="@color/button_color"
+                                        android:text="Create Better Balance"
+                                        android:textSize="18sp"
+                                        android:gravity="right"
+                                        android:background="@color/body_color"
+                                        android:layout_marginBottom="5dp" />
+                                    <TextView
+                                        android:id="@+id/tv_desc4"
+                                        android:scrollbars="vertical"
+                                        android:layout_width="253dp"
+                                        android:layout_height="match_parent"
+                                        android:textColor="@color/text_color"
+                                        android:text=""
+                                        android:textSize="14sp"
+                                        android:background="@color/body_color"
+                                        android:gravity="right" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@mipmap/scale"
+                                    android:id="@+id/img_scale"
+                                    android:layout_weight="1"
+                                    android:background="@color/body_color" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
